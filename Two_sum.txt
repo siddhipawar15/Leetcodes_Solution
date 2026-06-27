@@ -1,0 +1,39 @@
+package LeetCode_Again;
+import java.util.*;
+public class Two_sum {
+
+	
+	 public static int[]  myfun(int num[],int target)
+	 {
+		 HashMap<Integer,Integer> Map=new HashMap<>();
+		 
+		 for(int i=0;i<num.length;i++)
+		 {
+			 int comp=target-num[i];
+			 if(Map.containsKey(comp))
+			 {
+				 return new int[] {Map.get(comp),i};
+			 }
+			 
+			 Map.put(num[i],i);
+		 }
+		 return new int[] {};
+	 }
+	
+	
+	public static void main(String[] args) {
+		
+		int []arr= {1,2,3,4,5};
+		int target=6;
+		
+		int arr2[]=myfun(arr,target);
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr2[i]);
+		}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+		// TODO Auto-generated method stub
+
+	}
+
+}
