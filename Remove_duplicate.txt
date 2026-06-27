@@ -1,0 +1,37 @@
+package LeetCode_Again;
+import java.util.*;
+
+public class Remove_duplicate_element {
+	
+	public static void main(String args[])
+	{
+		int arr[]= {1,2,3,4,1,2,5,6,7,7,8};
+		
+		boolean isduplicate=false;
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			isduplicate=false;
+			
+			for(int j=0;j<i;j++)
+			{
+				if(arr[i]==arr[j])
+				{
+					
+					isduplicate=true;
+					break;
+					
+				}
+				
+				
+			}
+			if(!isduplicate)
+			{
+				System.out.print(arr[i]);
+			}
+			
+			
+		}
+	}
+
+}
